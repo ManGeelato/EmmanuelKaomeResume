@@ -1,0 +1,155 @@
+<!-- plagiarism declartion
+I combined the knowledge I got from 2 youtube tutorials to produce this portfolio site, links are below:
+https://www.youtube.com/watch?v=4mu1vbEz9WM&ab_channel=TheWebShala,
+https://www.youtube.com/watch?v=r_hYR53r61M&ab_channel=TraversyMedia -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Emmanuel Kaome portfolio website</title>
+        <!-- font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!--  css  link -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- javascript link -->
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <!-- header section starts here -->
+        <header>
+            <div class="user">
+                <img src="images/pic.jpg" alt="Emmanuel Kaome">
+                <h3 class="name">Emmanuel Kaome</h3>
+                <p class="post">Junior Full Stack Web Developer</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact Details</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header section ends here -->
+
+        <!-- home section starts here -->
+        <section class="home" id="home">
+            <h3>HI THERE !</h3>
+            <h1>I'm <span>Emmanuel Kaome</span></h1>
+            <p>
+                I have just over a year and a half experience as a junior software developer with Cortexware Private Limited.<br>
+                I have contributed to about six projects and assisted with managing and testing one project for one of the firm's long-time clients. 
+            </p>
+            <p>
+                I would like to continue specializing with front-end development mainly in mobile, web and desktop development<br>
+                as i also have fair experience with back-end programming with C# language, Database systems(Sql Server and MySql)<br> helping your firm to excel.
+            </p>
+            <p>
+                My main motivation comes from being assigned a new project to work on. Having that challenge ignites me knowing<br>
+                the output of that project could be used by a lot of people.<br>
+                As well the pool of knowledge I am going to gain from each and every project I do is <b>priceless</b>. As Programmers, <br>
+                the only way you can better yourself is by doing as many projects as you can. I take this as a personal trait that's so important if <br>
+                one wants to succeed as a programmer
+            </p>
+            <a href="https://github.com/manGeelato"><button class="btn" onclick="onClickGit()">Projects Done <i class="fas fa-trophy"></i></button></a>
+        </section>
+         <!-- home section ends here -->
+
+         <!-- about section starts here -->
+         <section class="about" id="about">
+            <h1 class="heading">  About Me </h1>
+            <div class="row">
+                <div class="info">
+                    <h3> <span> Name: </span> Emmanuel Kaome </h3>
+                    <h3> <span> Age: </span> 25 </h3>
+                    <h3> <span> Qualifications(InProgress): </span> <a href="https://www.hyperiondev.com/bootcamps/web-development/">HyperionDev</a> </h3>
+                    <h3> <span> Other Education: </span> Udemy Online Courses(Certificates available)</h3>
+                    <h3> <span> Post Applied: </span> Junior Full Stack Web Developer </h3>
+                    <h3> <span> Languages: </span> English, Zulu, Tswana and Shona </h3>
+                    <a href="resume/Emmanuel's Resume.pdf" download><button class="btn" onclick="onClickResume()">Download Resume<i class="fas fa-download"></i></button></a>
+                    <a href="https://github.com/manGeelato"><button class="btn" onclick="onClickGit()">GitHub<i class="fab fa-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-kaome-0247b7224/"><button class="btn" onclick="onClickLinkedIn()">LinkedIn<i class="fab fa-linkedin"></i></button></a>
+                </div>
+
+                <div class="counter">
+                    <div class="box">
+                        <span>1+</span>
+                        <h3>years of experience</h3>
+                    </div>
+
+                    <div class="box">
+                        <span>3+</span>
+                        <h3>projects completed</h3>
+                    </div>
+
+                    <div class="box">
+                        <span>1</span>
+                        <h3>award(s) won</h3>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- about section ends here -->
+
+         <!-- education section starts here -->
+         <section class="education" id="education">
+            <h1 class="heading">Education</h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2022 - Current</span>
+                    <h3>Full Stack Web Development</h3>
+                    <p>I am currently doing my Full Stack Web Development through
+                      <a href="https://www.hyperiondev.com/bootcamps/web-development/">HyperionDev</a> </p>
+                    <p>I am looking forward to finish this course in July</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2021</span>
+                    <h3>FrontEnd Web Development</h3>
+                    <p>I spend the whole year of 2021 horning my front end development skills through online Udemy courses,
+                        FreeCodeCamp and Youtube </p>
+                    <p>I also received certificates of achievement from Udemy after each course I had finished and passed</p>
+                </div>
+            </div>
+         </section>
+         <!-- education section ends here -->
+
+         <!-- contact section starts here -->
+         <section class="contact" id="contact">
+
+            <h1 class="heading"> Contact Details</h1>
+
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">Contact Information</h3>
+                    <div class="info">
+                        <h3> <i class="fas fa-envelope"></i> emmanuelkaome@protonmail.com </h3>
+                        <h3> <i class="fas fa-phone"></i> +267 617 2593</h3>
+                        <h3> <i class="fas fa-map-marker-alt"></i> Edenvale, Gauteng(South-Africa)</h3>           
+                    </div>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="name" class="box">
+                    <input type="email" placeholder="email" class="box">
+                    <input type="text" placeholder="project" class="box">
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                    <button 
+                        type="submit" 
+                        class="btn"
+                        onclick="addClient()"> 
+                        Submit <i class="fas fa-paper-plane"></i> 
+                    </button>
+                </form>
+            </div>
+        </section>
+        <!-- contact section ends here -->
+        <h1 class="credit">Developed by: <span>
+            <a href="https://www.linkedin.com/in/emmanuel-kaome-0247b7224/">Emmanuel Kaome</a></span> |
+            Through <a href="https://www.hyperiondev.com/bootcamps/web-development/"><b>HyperionDev</b></a>
+        </h1>
+    </body>
+</html>
